@@ -13,10 +13,19 @@ services:
             retries: 5
         restart: always
 
+
+
+### first terminal
+docker volume create --name dtc_postgres_volume_local -d local
+
 docker run -it \
     -e POSTGRES_USER: "root" \
     -e POSTGRES_password: "root" \
-    -e POSTGRES_DB: "ny_taxi"  \
-    -v $(pwd)/ny_taxi_postgres_data:/var/lib/postgresql/data \   
+    -e POSTGRES_DB: "ny_taxi" \
+    -v "$(pwd)"/ny_taxi_postgres_data:/var/lib/postgresql/data \   
     -p 5432:5432 \
-    postgres:13 
+    postgres:13
+
+##second terminl
+pip install pgcli
+winpty pgcli -h localhost -p 5432 -u root -d ny_taxi
