@@ -1,8 +1,8 @@
 import pandas as pd
-##import sys
+import sys
 
-###print(sys.argv)
+print(sys.argv)
 
-day = 'ipsum lorem etc'###3sys.argv[1]
+day = sys.argv[1]
 
-print('ayyyy lmao. here is the date, bruh: f{day}')
+print(f'ayyyy lmao. here is the date, bruh: {day}')
