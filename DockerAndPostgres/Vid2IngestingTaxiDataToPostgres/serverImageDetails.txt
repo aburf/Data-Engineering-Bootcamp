@@ -27,6 +27,13 @@ docker run -it\
   -p 5432:5432\
   postgres:13
 
-##second terminl
+##second terminl is functional
+
 pip install pgcli
-winpty pgcli -h localhost -p 5432 -u root -d ny_taxi
+pgcli -h localhost -p 5432 -u root -d ny_taxi
+
+##open jupytyer notebook
+
+##third terminal
+wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz
+
