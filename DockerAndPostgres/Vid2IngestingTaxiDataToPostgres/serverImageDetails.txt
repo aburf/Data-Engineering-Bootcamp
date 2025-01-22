@@ -16,15 +16,16 @@ services:
 
 
 ### first terminal
-docker volume create --name dtc_postgres_volume_local -d local
+###worked in wsl on mingw64
 
-docker run -it \
-    -e POSTGRES_USER: "root" \
-    -e POSTGRES_password: "root" \
-    -e POSTGRES_DB: "ny_taxi" \
-    -v "$(pwd)"/ny_taxi_postgres_data:/var/lib/postgresql/data \   
-    -p 5432:5432 \
-    postgres:13
+docker volume create --name dtc_postgres_volume_local -d local
+docker run -it\
+  -e POSTGRES_USER="root" \
+  -e POSTGRES_PASSWORD="root" \
+  -e POSTGRES_DB="ny_taxi" \
+  -v dtc_postgres_volume_local:/var/lib/postgresql/data \
+  -p 5432:5432\
+  postgres:13
 
 ##second terminl
 pip install pgcli
