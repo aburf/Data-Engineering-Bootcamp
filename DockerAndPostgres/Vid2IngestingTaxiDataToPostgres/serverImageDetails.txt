@@ -36,6 +36,11 @@ pgcli -h localhost -p 5432 -u root -d ny_taxi
 
 ##third terminal
 wget https://github.com/DataTalksClub/nyc-tlc-data/releases/download/yellow/yellow_tripdata_2021-01.csv.gz
+##unzip -> take 1K rows to new file -> rezip original file
+gzip -d yellow_tripdata_2021-01.csv.gz
+head -n 1000 yellow_tripdata_2021-01.csv > yellow_tripdata_1000.csv
+gzip yellow_tripdata_2021-01.csv
+
 
 postgres.ipynb
 /workspaces/Data-Engineering-Bootcamp/DockerAndPostgres/Vid2IngestingTaxiDataToPostgres
