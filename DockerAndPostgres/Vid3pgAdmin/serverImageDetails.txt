@@ -7,8 +7,12 @@ docker run -it\
   postgres:13
 
 
-docker run -it\
-  -e PGADMIN_DEFAULT_EMAIL="admin@admin.com" \
-  -e PGADMIN_DEFAULT_PASSWORD="root" \
-  -p 8080:80\
-  dpage:pgadmin14
+docker run -it \
+-e PGADMIN_DEFAULT_EMAIL="admin@admin.com" \
+-e PGADMIN_DEFAULT_PASSWORD="root" \
+-p 8080:80 \
+dpage/pgadmin4
+
+  
+  -e PGADMIN_CONFIG_PROXY_X_HOST_COUNT: 1 \
+  -e PGADMIN_CONFIG_PROXY_X_PREFIX_COUNT: 1 \
