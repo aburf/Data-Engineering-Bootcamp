@@ -21,7 +21,7 @@ docker run -it \
 dpage/pgadmin4
 
 
-
+###now run python pipeline to create actual table, then go to pgadmin to review table
 
 ##instructions for port forwarding (to get localhost): 
 ##https://docs.github.com/en/codespaces/developing-in-a-codespace/forwarding-ports-in-your-codespace
