@@ -1,0 +1,6 @@
+##terminal jupyter command to convert to script for docker
+jupyter nbconvert --to=script postgres.ipynb
+
+##move script
+mv postgres.py /workspaces/Data-Engineering-Bootcamp/DockerAndPostgres/Vid4DockerIngestionScript
+mv postgres.py pipeline.py
