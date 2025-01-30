@@ -16,4 +16,3 @@ python ingest_data.py \
     --db=ny_taxi \
     --table_name=yellow_taxi_data \
     --data_url = '/workspaces/Data-Engineering-Bootcamp/yellow_tripdata_1000.csv'
-    --csv_name = data_url.split('/')[-1]
