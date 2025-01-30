@@ -8,6 +8,7 @@ mv postgres.py pipeline.py
 
 ##running ingest data fie
 ##resume video at 10 minutes
+URL="/workspaces/Data-Engineering-Bootcamp/yellow_tripdata_1000.csv"
 python ingest_data.py \ 
     --user=root \
     --password=root \
@@ -15,4 +16,4 @@ python ingest_data.py \
     --port=5432 \
     --db=ny_taxi \
     --table_name=yellow_taxi_data \
-    --data_url = '/workspaces/Data-Engineering-Bootcamp/yellow_tripdata_1000.csv'
+    --url = ${URL}

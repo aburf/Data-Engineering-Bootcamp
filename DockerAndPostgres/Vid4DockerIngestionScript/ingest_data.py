@@ -15,7 +15,7 @@ def main(params):
         host = params.host
         port = params.port
         db = params.db
-        table_name = params.tabe_name
+        table_name = params.table_name
         data_url = params.url ##'/workspaces/Data-Engineering-Bootcamp/yellow_tripdata_1000.csv'
         csv_name = data_url.split('/')[-1]
 
