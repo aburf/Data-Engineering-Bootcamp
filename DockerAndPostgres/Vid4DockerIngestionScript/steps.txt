@@ -6,6 +6,9 @@ mv postgres.py /workspaces/Data-Engineering-Bootcamp/DockerAndPostgres/Vid4Docke
 mv postgres.py pipeline.py
 
 
+###need this to run the python scrips
+pip install wget
+
 ##running ingest data fie
 ##resume video at 10 minutes
 URL="/workspaces/Data-Engineering-Bootcamp/yellow_tripdata_1000.csv"
