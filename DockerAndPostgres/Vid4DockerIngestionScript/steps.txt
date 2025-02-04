@@ -8,6 +8,8 @@ mv postgres.py pipeline.py
 
 ###need this to run the python scrips
 pip install wget
+pip install sqlalchemy
+pip install psycopg2-binary
 
 ##running ingest data fie
 ##resume video at 10 minutes
