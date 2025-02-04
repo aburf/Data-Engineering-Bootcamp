@@ -13,7 +13,9 @@ pip install psycopg2-binary
 
 ##running ingest data fie
 ##resume video at 10 minutes
+
 URL="/workspaces/Data-Engineering-Bootcamp/yellow_tripdata_1000.csv"
+
 python ingest_data.py \ 
     --user=root \
     --password=root \
