@@ -18,7 +18,7 @@ def main(params):
     port = params.port 
     db = params.db
     table_name = params.table_name
-    url = params.url
+    url = '/workspaces/Data-Engineering-Bootcamp/yellow_tripdata_1000.csv'##params.url
     
     # the backup files are gzipped, and it's important to keep the correct extension
     # for pandas to be able to open the file
