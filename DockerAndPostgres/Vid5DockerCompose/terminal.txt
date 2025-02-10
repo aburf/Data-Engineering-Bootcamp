@@ -1,0 +1,3 @@
+##while WD is where you have docker compose yaml file
+
+docker-compose up
